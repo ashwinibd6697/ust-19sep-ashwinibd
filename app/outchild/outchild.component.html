@@ -1,0 +1,11 @@
+<form action="" #form='ngForm' (ngSubmit)='comment(form)'>
+    <div class="form-group">
+        <input type="text" name="text" id="text" 
+        placeholder="enter here..........." #text='ngModel' ngModel >
+    </div>
+    <div class="form-group">
+        <textarea name="desc" id="desc" cols="30" rows="10"
+        placeholder="ENTER description" #desc='ngModel' ngModel></textarea>
+    </div>
+    <button class=" btn btn-outline-primary float-right">postComment</button>
+</form>

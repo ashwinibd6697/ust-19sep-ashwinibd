@@ -1,0 +1,52 @@
+<!-- property binding -->
+proprty binding
+<h1>{{name}}</h1>;
+<h1>{{age}}</h1>
+<!-- style bimding -->
+style binding
+<h1 [style.color]='color'>{{name}}</h1>
+<!-- class binding -->
+class binding:
+<h1 [class.bg-success]='isActive' [class.bg-secondary]='!isActive'>{{name}}</h1>
+attribute binding: 
+<!-- attribute binding -->
+<table class="table table-success table-bordered table-striped" >
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th [attr.colspan]='colspan' >Phone number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ashwini</td>
+            <td>1</td>
+            <td>24324</td>
+            <td>435678</td>
+        </tr>
+        <tr>
+            <td>Acchu</td>
+            <td>2</td>
+            <td>9087</td>
+            <td>123478</td>
+        </tr>
+        <tr>
+            <td>madhu</td>
+            <td>3</td>
+            <td>24324</td>
+            <td>435678</td>
+        </tr>
+    </tbody>
+</table>
+<!-- event binding -->
+event binding:
+<button type:button class="btn btn-outline-primary" (click) ="printAlertMsg()">click Here</button>
+<!-- two way data binding -->
+Two way binding:
+<input type="text" name="search" id="search" class=" form-control col-md-6 offset-3 mt-5 mb-5" (input)="dataInput($event)" placeholder="Enter anything....">
+<h1 class="col-md-6 offset-3 mt-5">{{input}}</h1>
+
+
+<input type="text" placeholder="enter values" name="search" id="search" class="form-control col-md-6 offset-3 mt-5 mb-5" [(ngModel)]="s">
+  <h1>{{s}}</h1> 
