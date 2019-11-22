@@ -1,0 +1,45 @@
+
+form {
+    border: 1px solid black;
+    width: 35%;
+    border-radius: 30px;
+    margin:114px 0 0 437px;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 30px;
+    /* display: inline-blockhy; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+    outline: none;
+  }
+  
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 52px 171px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    outline: none;
+    
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+
+  .container {
+    padding: 16px;
+    
+  }
+  
