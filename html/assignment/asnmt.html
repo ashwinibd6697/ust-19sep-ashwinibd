@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>a.</h1>
+    <table border="5px">
+        <p>A test table with merged cells</p>
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">average</td>
+            <td rowspan="2">Red Eyes</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>weight</td>
+        </tr>
+        <tr>
+            <td>males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>  
+    <h3>b.</h3>
+    <table border="5px">
+        <th colspan="6">Time Table</th>
+        <tr >
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thr</th>
+            <th>fri</th>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>Science</td>
+            <td>maths</td>
+            <td>arts</td>
+        </tr>
+        <tr>
+            <td>social</td>
+            <td>histry</td>
+            <td>eng</td>
+            <td>social</td>
+            <td>sports</td>
+        </tr>
+        <tr>
+            <th colspan="6">lunch</th>
+             
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>Science</td>
+            <td>maths</td>
+            <td rowspan="2">project</td>
+        </tr>
+        <tr>
+            <td>social</td>
+            <td>histry</td>
+            <td>english</td>
+            <td>social</td>
+            
+        </tr>
+    </table>
+<h3>c.</h3>
+<table border="5px">
+    <tr>
+    <th colspan="2">Home team</th>
+    <th colspan="2">Away Team</th>
+    </tr>
+    <tr>
+        <td>arsenal</td>
+        <td>2</td>
+            <td>leeds</td>
+            <td>1</td>
+        
+    </tr>
+    <tr>
+        <td>derby</td>
+        <td>1</td>
+        <td>evertten
+        </td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>liverpool</td>
+        <td>0</td>
+        <td>sunderland</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>newcastle</td>
+        <td>1
+        </td>
+        <td>man utd</td>
+         <td>4</td>
+    </tr>
+    </table>
+    <h1>d.</h1>
+    <form action="">
+        <label for="">First name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="">last name</label><br>
+        <input type="text" name="name " id="name "><br>
+        <label for="">company name</label><br>
+        <input type="text" name="company" id="company"><br>
+        <label for="">Email ID</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="">date of joining</label><br>
+        <input type="text" name="date" id="date"><br>
+        <br>
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" id="male">male
+        <input type="radio" name="gender" id="female">female
+        <input type="radio" name="gender" id="othrs">others <br><br>
+        <label for="">skills</label><br>
+        &nbsp; &nbsp;<input type="checkbox" name="java" id="java">java <br>
+        &nbsp; &nbsp;<input type="checkbox" name="java" id="j2ee">j2ee <br>
+        &nbsp; &nbsp;<input type="checkbox" name="java" id="sql">sql <br>
+        &nbsp; &nbsp;<input type="checkbox" name="java" id="hibernet">hibernet
+        <br><br>
+        <input type="submit" value="Submit"> &nbsp;
+        <input type="reset" value="reset">
+        
+    </form>
+    <h1>e.</h1>
+    <form action="">
+        <h2>Customer Details</h2>
+        <label for="">Full Name </label><br>
+         <input type="text" name="fname" id="fname" placeholder="First Name" required>
+         <input type="text" name="lname" id="lname" placeholder="last Name"><br><br>
+         <label for="">Address</label><br>
+         <input type="text" name="addrs" id="addrs" placeholder="Street Address"><br><br>
+         <input type="text" name="addrs" id="addrs" placeholder="Street Adress line 2"><br><br>
+         <input type="text" name="city" id="city" placeholder="city"> &nbsp;
+         <input type="text" name="state" id="state" placeholder="State/province"><br><br>
+         <input type="number" name="portal" id="portal" placeholder="portal/Zipcocde"> &nbsp;&nbsp;
+         <select name="country" id="country">
+             <option value="0" selected disabled> please select</option>
+             <option value="">India</option>
+             <option value="">America</option>
+             <option value="">pakistan</option>
+         </select>
+    </form>
+    <h1>f.</h1>
+    <form action="">
+        <label for="">Full Name </label>&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="fname" id="fname" placeholder="First Name" required>
+        <input type="text" name="mname" id="mname" placeholder="middle Name" >
+        <input type="text" name="lname" id="lname" placeholder="last Name"><br><br>
+        <label for="">current Address</label>
+         &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="addrs" id="addrs" placeholder="Street Address"><br><br>
+         &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="text" name="addrs" id="addrs" placeholder="Street Adress line 2"><br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" id="city" placeholder="city"> &nbsp;
+        <input type="text" name="state" id="state" placeholder="State/province"><br><br>
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="portal" id="portal" placeholder="portal/Zipcocde"> &nbsp;&nbsp;
+        <select name="country" id="country">
+            <option value="0" selected disabled> please select</option>
+            <option value="">India</option>
+            <option value="">America</option>
+            <option value="">pakistan</option>
+        </select><br><br>
+        <label for="">Email ID</label>&nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email"><br>
+        <br><label for="">Phone number</label>
+        &nbsp; &nbsp;&nbsp;&nbsp; <input type="tel" name="numbr" id="numbr" placeholder="Area code">
+        <input type="tel" name="numr" id="numr" placeholder="Phone number"><br><br>
+        <label for="">Birth date</label> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        <select name="month" id="month">
+               <option value="0" selected disabled>select</option>
+               <option value="">jan</option>
+               <option value="">feb</option>
+               <option value="">march</option>
+   
+           </select> &nbsp;&nbsp;
+           <select name="month" id="month">
+                   <option value="0" selected disabled>select</option>
+                   <option value="">sun</option>
+                   <option value="">mon</option>
+                   <option value="">tue</option>
+       
+               </select> &nbsp;&nbsp;
+               <select name="month" id="month">
+                       <option value="0" selected disabled>select</option>
+                       <option value="">1997</option>
+                       <option value="">1998</option>
+                       <option value="">1999</option>
+           
+                   </select>
+                   <!-- <select name="date" id="date">
+                       <input type="date" name="date" id="date">
+                   </select> -->
+               </form>
+</body>
+</html>
