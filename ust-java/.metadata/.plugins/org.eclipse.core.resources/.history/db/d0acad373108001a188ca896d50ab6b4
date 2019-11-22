@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search </title>
+</head>
+<body>
+<a href="./home">Home</a><a style="float :right" href="#">logout</a>
+<fieldset align="center" >
+<legend>Search</legend>
+<form action="">
+  <table align="center">
+  
+   <tr>
+    <td>search :</td>
+    <td><input name ="id" type="text"></td>
+    </tr>
+    <tr>
+    <tr>
+    <td></td>
+    <td><input type ="submit" value ="search"></td>
+    </tr>
+    </table>
+    </form>
+    </fieldset>
+</body>
+</html>

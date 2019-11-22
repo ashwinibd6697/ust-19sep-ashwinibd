@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+   <a href ="home.html">home</a>
+   <a href ="login.html" style:"text-align=right"> logout</a>
+  new     : <input name ="new" type="password">
+  confirm : <input type ="password" name ="password"> 
+    </form>
+</body>
+</html>

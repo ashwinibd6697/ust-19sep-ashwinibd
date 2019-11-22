@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+   <form action="">
+   <table>
+   <tr>
+   emplyee_id:
+				<td>Search</td>
+				<td><input name="search" type="text"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+   
+   <tr>   
+   <th>ID</th>
+   <th>Name</th>
+   <th>sal</th>
+   <th>gender</th>
+   
+   </tr>
+   
+   
+   
+   
+   </table>
+   
+   </form>
+</body>
+</html>

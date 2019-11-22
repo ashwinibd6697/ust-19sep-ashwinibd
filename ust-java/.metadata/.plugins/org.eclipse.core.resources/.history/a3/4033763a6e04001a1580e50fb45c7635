@@ -1,0 +1,21 @@
+package com.ustglobal.thread.pausing;
+
+public class Test {
+public static void main(String[] args) {
+	Counter c = new Counter();
+	Runnable r1 = ()->{
+		c.increment();
+		c.decrement();
+	};
+	Runnable r2 =()->{
+		c.decrement();
+		c.increment();
+	};
+	c.show();
+	Thread t = new Thread(r1);
+	Thread t1 = new Thread(r2);
+	
+	t.start();
+	
+}
+}

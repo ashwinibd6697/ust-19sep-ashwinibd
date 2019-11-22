@@ -1,0 +1,53 @@
+ package com.ustglobal.Prodactwithjdbc.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import com.ustglobal.Prodactwithjdbc.dto.ProductBean;
+
+public class ProductDAOWithImpl implements  ProductDAO {
+  String url ="jdbc:mysql://localhost:3306/ust_ty_db?user=root&password=root";
+  Connection conn=null;
+  PreparedStatement pstmt = null;
+  ResultSet rs = null;
+  
+	
+	
+	
+	@Override
+	public List<ProductBean> retriveProducts() {
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public ProductBean searchProduct(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insertProduct(ProductBean b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteProduct(ProductBean b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateProduct(ProductBean b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

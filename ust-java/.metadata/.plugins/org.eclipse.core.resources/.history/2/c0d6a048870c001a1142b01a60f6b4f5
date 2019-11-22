@@ -1,0 +1,26 @@
+package com.ustglobal.Prodactwithjdbc.dto;
+
+public class ProductBean {
+  private int pid;
+  private int pname;
+  private int quantity;
+public int getPid() {
+	return pid;
+}
+public void setPid(int pid) {
+	this.pid = pid;
+}
+public int getPname() {
+	return pname;
+}
+public void setPname(int pname) {
+	this.pname = pname;
+}
+public int getQuantity() {
+	return quantity;
+}
+public void setQuantity(int quantity) {
+	this.quantity = quantity;
+}
+  
+}

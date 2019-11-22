@@ -1,0 +1,5 @@
+package com.ustglobal.jdbcwithmaven.jjj;
+
+public class UpdateQuery {
+
+}

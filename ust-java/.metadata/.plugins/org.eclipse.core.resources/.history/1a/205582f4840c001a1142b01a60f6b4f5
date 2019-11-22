@@ -1,0 +1,5 @@
+package com.ustglobal.Prodactwithjdbc.util;
+
+public class ProductManager {
+
+}

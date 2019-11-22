@@ -1,0 +1,10 @@
+
+public class Test2 {
+public static void main(String[] args) {
+	ThirdGen t1=new ThirdGen();
+	t1.msg();
+	t1.call();
+	t1.games();
+	t1.camera();
+}
+}

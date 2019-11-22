@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>webapp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <context-param>
+    <param-name>company-name</param-name>
+    <param-value>TYSS</param-value>
+    </context-param>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>FirstServlet</servlet-name>
+  <servlet-class>com.ustglobal.webapp.servlets.MyFirstServlet</servlet-class>
+ 
+ <init-param>
+  <param-name>batch-name</param-name>
+    <param-value>ustglobal</param-value></init-param>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>FirstServlet</servlet-name>
+  <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>FormServlet</servlet-name>
+  <servlet-class>com.ustglobal.webapp.servlets.FormServlet</servlet-class>
+  
+  
+ <init-param>
+  <param-name>batch-name</param-name>
+    <param-value>ty</param-value></init-param>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FormServlet</servlet-name>
+  <url-pattern>/form</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>redirect</servlet-name>
+  <servlet-class>com.ustglobal.webapp.servlets.RedirectServlets</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>redirect</servlet-name>
+  <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>farword</servlet-name>
+  <servlet-class>com.ustglobal.webapp.servlets.FarwordServlet</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>farword</servlet-name>
+  <url-pattern>/farword</url-pattern>
+  </servlet-mapping>
+</web-app> 

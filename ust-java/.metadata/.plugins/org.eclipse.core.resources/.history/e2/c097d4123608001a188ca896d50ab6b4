@@ -1,0 +1,44 @@
+package com.ustglobal.empwebapp.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.ustglobal.empwebapp.dao.EmployeeDAO;
+import com.ustglobal.empwebapp.util.EmployeeDaoManager;
+
+public class ChangePassword extends HttpServlet {
+  @Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	  
+	  int id = Integer.parseInt(req.getParameter("id"));
+	  String password = req.getParameter("password");
+
+		EmployeeDAO dao = EmployeeDaoManager.getEmployeeDAO();
+		boolean check = dao.changePassword(id, password);
+		PrintWriter out = resp.getWriter();
+		if (check) {
+			out.println("<html>");
+			out.println("<h3> changed password succeful</h3>");
+			out.println("<html>");
+		} else {
+			out.println("<html>");
+			out.println("<h3>password not changed</h3>");
+			out.println("</html>");
+		}
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/home");
+		dispatcher.include(req, resp);
+	}// end of dopost
+	  
+	  
+}
+	
+	
+	
+}

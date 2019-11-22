@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change password</title>
+</head>
+<body>
+<form action="">
+   <nav><a href ="home.html">home</a>
+   <a href ="login.html" style="margin-right: 2000px"> logout</a></nav>
+  new     : <input name ="new" type="password"> <br>
+  confirm : <input type ="password" name ="password"> <br>
+            <input type ="submit" value ="change"> 
+   
+  
+     
+    </form>
+</body>
+</html>

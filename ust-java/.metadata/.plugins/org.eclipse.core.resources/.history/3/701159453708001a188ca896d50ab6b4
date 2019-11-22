@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change password</title>
+</head>
+<body>
+<a href="./home">Home</a><a style="float :right" href="#">logout</a>
+<fieldset>
+<legend>Change password</legend>
+<form action="./change" method ="post">
+   <table>
+  <tr>
+  <td>new     : </td>
+  <td><input name ="new" type="password"> </td>
+  </tr>
+  <tr>
+  <td>confirm : </td>
+      <td><input type ="password" name ="password"></td>
+      </tr>      
+    <tr>
+    <td></td>
+  <td><input type ="submit" value ="change"> 
+</tr>   
+  
+     </table>
+    </form>
+    </fieldset>
+</body>
+</html>

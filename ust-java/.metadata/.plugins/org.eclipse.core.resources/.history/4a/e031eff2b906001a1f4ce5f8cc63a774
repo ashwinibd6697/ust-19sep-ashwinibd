@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+   <form action="">
+   <table>
+   <tr>
+   emplyee_id:
+				<td>Search</td>
+				<td><input name="search" type="text"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+   
+   <tr>   
+   <th>ID</th>
+   <th>Name</th>
+   <th>sal</th>
+   <th>gender</th>
+   
+   </tr>
+   <tr>
+   <td>1</td>
+   <td>Ashwini</td>
+   <td>10000</td>
+   <td>f</td>
+    </tr>
+    <tr>
+   <td>2</td>
+   <td>Madhu</td>
+   <td>30000</td>
+   <td>f</td>
+    </tr>
+    <tr>
+   <td>3</td>
+   <td>Acchu</td>
+   <td>50000</td>
+   <td>f</td>
+    </tr>
+    <tr>
+   <td>4</td>
+   <td>Kiran</td>
+   <td>80000</td>
+   <td>m</td>
+    </tr>
+    <tr>
+   <td>5</td>
+   <td>Abhi</td>
+   <td>20000</td>
+   <td>m</td>
+    </tr>
+   
+   
+   
+   </table>
+   
+   </form>
+</body>
+</html>

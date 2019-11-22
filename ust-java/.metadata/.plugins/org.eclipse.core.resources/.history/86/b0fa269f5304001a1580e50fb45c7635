@@ -1,0 +1,28 @@
+package com.ustglobal.thread.properties;
+
+public class MyThread extends Thread {
+  public static void main(String[] args) {
+	System.out.println("Main started");
+	
+	//to get thread name 
+	String name= Thread.currentThread().getName();
+	System.out.println("Current thread "+name);
+	//we can set thread name using setName()
+	
+	
+	MyThread t1 = new MyThread();
+	String name1= t1.getName();
+	System.out.println("My thread Name "+name1);
+	
+	 Thread.currentThread().setName("Bala");
+	 
+	 t1.setName("golu");
+	 
+		System.out.println("My thread Name "+t1.getName());
+	
+	System.out.println(10/0);
+     
+      
+	System.out.println("Main ended");
+}
+}

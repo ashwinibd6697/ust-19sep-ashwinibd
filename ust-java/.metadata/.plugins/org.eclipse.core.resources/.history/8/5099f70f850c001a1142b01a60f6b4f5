@@ -1,0 +1,5 @@
+package com.ustglobal.Prodactwithjdbc.dao;
+
+public interface ProductDAO {
+
+}

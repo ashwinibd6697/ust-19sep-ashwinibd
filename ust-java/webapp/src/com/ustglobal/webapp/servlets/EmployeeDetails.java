@@ -1,0 +1,96 @@
+package com.ustglobal.webapp.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class EmployeeDetails extends HttpServlet {
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		 String url = "jdbc:mysql://localhost:3306/ust_ty_db?user=root&password=root";
+			String sql ="select * from employee where id=?";
+			Connection conn=null;
+			PreparedStatement pstmt=null;
+			ResultSet rs =null;
+		
+			String s=req.getParameter("search");
+			int id=Integer.valueOf(s);
+		PrintWriter out = resp.getWriter();
+	   
+		  
+			try {
+	              //step 1
+//				Driver driver = new Driver();
+//				DriverManager.registerDriver(driver);
+				Class.forName("com.mysql.jdbc.Driver");
+				//step2
+				
+				conn=DriverManager.getConnection(url);
+	          
+				//step3
+				
+				pstmt = conn.prepareStatement(sql);
+
+				
+				
+				pstmt.setInt(1,id);
+
+				rs=pstmt.executeQuery();
+
+
+				//step 4
+
+				if(rs.next()) {
+					int id1=rs.getInt("id");
+					int sal = rs.getInt("sal");
+					String n =rs.getString("sal");
+					String g = rs.getString("gender");
+
+					out.println("id     : "+id1);
+					out.println("name   : "+n);
+					out.println("salary : "+sal);
+					out.println("gender : "+g);
+
+					out.println("************************");
+				}
+
+			}catch(Exception e ) {
+				e.printStackTrace();
+			}finally {
+				try {//step 5
+					if(conn!=null) conn.close();
+					if(pstmt!=null) pstmt.close();
+					if(rs!=null) rs.close();
+					
+				}catch(SQLException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}

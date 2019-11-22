@@ -1,0 +1,40 @@
+package com.ustglobal.Productwithjdbc;
+
+import java.util.Scanner;
+
+import com.ustglobal.Prodactwithjdbc.dao.ProductDAO;
+import com.ustglobal.Prodactwithjdbc.util.ProductManager;
+
+public class ProductMain {
+	public static void main(String[] args) {
+
+		System.out.println("1 for retrive data");
+		System.out.println("1 for insert data");
+		System.out.println("1 for delete data");
+		System.out.println("1 for search data");
+		System.out.println("1 for update data");
+
+		Scanner sc = new Scanner(System.in);
+		int ch=sc.nextInt();
+		switch(ch){
+		case 1:
+			    ProductDAO p = ProductManager.getInstance();
+			    p=retriveProducts();
+			    
+			   
+			
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+
+
+
+		}
+	}
+}

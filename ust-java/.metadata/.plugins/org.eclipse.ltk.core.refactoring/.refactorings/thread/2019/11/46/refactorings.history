@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ustglobal.thread.pausing.counter&apos; to &apos;Counter&apos;&#x0D;&#x0A;- Original project: &apos;thread&apos;&#x0D;&#x0A;- Original element: &apos;com.ustglobal.thread.pausing.counter&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ustglobal.thread.pausing.Counter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;counter&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ustglobal.thread.pausing{counter.java[counter" matchStrategy="1" name="Counter" qualified="false" references="true" similarDeclarations="false" stamp="1573468019517" textual="false" version="1.0"/>
+</session>
