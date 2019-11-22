@@ -1,0 +1,28 @@
+#a{
+    background-image: url(https://img.freepik.com/free-vector/valentines-day-colorful-hearts-card-header_1035-16212.jpg?size=626&ext=jpg);
+    background-size: cover;
+}
+#b{
+    width: 300px;
+    height: 300px;
+    
+}
+
+    #v{
+        height: 500px;
+        width: 300px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px blue;
+        /* horizontal,vertival, for blurrness */
+        transition: all 2s;
+        cursor: pointer;
+        /*  for speed slow zoom */
+    
+    }
+    img:hover{
+        /* to zoom the pictures  transform:scale(width,height) scale is used for to gave the size of zoomingtag is used*/
+        transform: scale(1.1,1.1)
+        
+    }
