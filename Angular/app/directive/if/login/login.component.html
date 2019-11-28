@@ -1,0 +1,29 @@
+<!-- <app-header></app-header> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form *ngIf='showHide'>
+                
+              
+        <div class="container">
+            <h1 style="text-align: center"> Login Here</h1>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+      
+          <label for="psw"><b>Password</b></label>
+          <input  id="myInput" type="password" placeholder="Enter Password  " name="psw" required><br><br>
+  
+              <input type="checkbox">Show Password
+      
+          <button type="submit">Login</button>
+    
+        </div>
+      </form>
+</body>
+</html>
