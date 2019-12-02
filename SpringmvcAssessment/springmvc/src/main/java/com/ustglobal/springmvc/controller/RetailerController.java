@@ -56,6 +56,26 @@ public class RetailerController {
 		return "login";
 	}//end of register
 	
+	
+	
+	@GetMapping("/regpro")
+	public String registerprod() {
+		return "regproduct";
+	}
+
+	@PostMapping("/regpro")
+	public String registerprod(Product bean ,ModelMap map) {
+	int check=	service.registerProduct(bean);
+		if(check>0) {
+			map.addAttribute("msg", "you are Registerd for this id:"+check);
+			
+		}else {
+			map.addAttribute("msg","email is repeated");
+			
+		}
+		return "login";
+	}//end of register
+	
 	 @GetMapping("/changepassword")
      public String changepassword(HttpServletRequest request) {
     	 HttpSession session =request.getSession(false);
@@ -95,4 +115,20 @@ public class RetailerController {
     	 return "login";
      }
 	
+     
+   
+
+ 	@PostMapping("/buy")
+ 	public String buyprod(Product bean ,ModelMap map) {
+ 	int check=	service.buyProduct(bean.getPid());
+ 		if(check>0) {
+ 			map.addAttribute("msg", "you are buy for this id:"+check);
+ 			
+ 		}else {
+ 			map.addAttribute("msg","product not present");
+ 			
+ 		}
+ 		return "login";
+ 	}//end of register
+     
 }

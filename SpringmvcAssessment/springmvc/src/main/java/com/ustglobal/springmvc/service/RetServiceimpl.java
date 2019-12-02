@@ -48,4 +48,10 @@ public class RetServiceimpl implements RetService {
 		return dao.registerProduct(bean);
 	}
 
+	@Override
+	public int buyProduct(int id) {
+		
+		return dao.buyProduct(id);
+	}
+
 }

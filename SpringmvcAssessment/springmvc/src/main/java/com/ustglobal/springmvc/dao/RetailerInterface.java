@@ -9,6 +9,7 @@ public interface RetailerInterface {
 	public Product searchProductO(int id);
 	public int register(Retailer bean);
 	public int registerProduct(Product bean);
+	public int buyProduct(int id);
 	
 	public Retailer searchorders(int id);
 	

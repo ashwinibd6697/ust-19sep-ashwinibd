@@ -47,6 +47,8 @@ public class RetailerDAO implements RetailerInterface {
 		try {
 			manager.persist(bean);
 			transaction.commit();
+			
+			
 			return bean.getId();
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -88,6 +90,23 @@ return -1;
 		}
 manager.close();
 return -1;
+	}
+
+	@Override
+	public int buyProduct(int id) {
+
+		EntityManager manager =factory.createEntityManager();
+		EntityTransaction transaction =manager.getTransaction();
+		transaction.begin();
+		try {
+			Product bean=  manager.find(Product.class, id);
+			manager.remove(bean);
+			transaction.commit();
+			return bean.getPid();
+		}catch(Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
 	}
 
 }

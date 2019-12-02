@@ -1,10 +1,12 @@
 package com.ustglobal.springmvc.dto;
 
-import javax.persistence.CascadeType;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -16,7 +18,7 @@ import lombok.EqualsAndHashCode.Exclude;
 public class Retailer {
      @Id
      @Column
-     
+     @GeneratedValue
 	private int id;
      @Column
 	private String name;
@@ -25,8 +27,10 @@ public class Retailer {
      @Column
      private String password;
 	
-
- 	@Exclude
- 	@ManyToMany( cascade=CascadeType.ALL,mappedBy = "retailer")
- 	 	private Product product;
+     
+     
+     
+     @Exclude
+     @OneToMany(mappedBy = "rt")
+  	private List<Order> order;
 }

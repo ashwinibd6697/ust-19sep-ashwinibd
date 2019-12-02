@@ -28,5 +28,6 @@
 		</form>
 	</fieldset>
 	<a href="./register">Click here to Register</a>
+	<a href="./regpro">Click here to RegisterProduct</a>
 </body>
 </html>

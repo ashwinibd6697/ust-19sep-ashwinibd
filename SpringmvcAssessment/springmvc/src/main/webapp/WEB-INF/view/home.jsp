@@ -27,7 +27,7 @@ Retailer bean = (Retailer) session.getAttribute("bean");
 				<tr>
 
 					<td>ID:</td>
-					<td><input type="number" name="id"></td>
+					<td><input type="number" name="pid"></td>
 					<td><input type="submit" name="search"></td>
 				</tr>
 
@@ -43,14 +43,18 @@ Retailer bean = (Retailer) session.getAttribute("bean");
 		%>
 	<table>
 		<tr>
+	        <th>pid</th>	
 			<th>PName</th>
 			<th>Price</th>
+			<th></th>
 			
 		</tr>
 
 		<tr>
+		     <td><%=employeeBean.getPid()%></td>
 			<td><%=employeeBean.getPName()%></td>
 			<td><%=employeeBean.getPrice()%></td>
+			<td><a href="./buy">buy</a>
 			
 		</tr>
 	</table>

@@ -1,5 +1,7 @@
 package com.ustglobal.springmvc.dto;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,9 +10,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode.Exclude;
 
 @Data
 @Entity
@@ -23,13 +27,11 @@ public class Product {
    private String pName;
 	@Column
    private double price;
-//	@ManyToOne(cascade=CascadeType.ALL)
-//	@JoinColumn(name="orderId",nullable = false)
-//	private Order order;
-//	
-	@ManyToMany(cascade=CascadeType.ALL)	
-	@JoinTable(name="order_Deatils", joinColumns=@JoinColumn(name="pid"),            inverseJoinColumns = @JoinColumn(name="id"))
+	 
+	@Exclude
+     @OneToMany(mappedBy = "pr")
+  	private List<Order> ord;
 
-	private Retailer ret;
+
    
 }
