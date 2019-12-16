@@ -1,0 +1,4 @@
+18,Ashwini,3000,F
+19,Abhi,50000,M
+17,Madhu,60000,F
+16,Kiran,70000,M
