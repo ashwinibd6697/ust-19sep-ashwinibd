@@ -1,0 +1,61 @@
+ <h3 style="color: green; text-align: center;">{{msg}}</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+                <form action="" #productform='ngForm' (ngSubmit)='addProduct(productform)' class="form-container">
+                        <h1 style="text-align: center;color:black;font-family: 'Times New Roman', Times, serif;"> Add Products!!</h1><br>
+                        <div class="form-group">
+                            <input type="text" name='name' #name='ngModel' ngModel  class="form-control" placeholder="Enter Product Name " required>
+                        </div>
+                            <div *ngIf='name.touched&&name.invalid'>
+                                <small style="color: red;">This field cannot be empty</small>
+                            </div>
+                        
+                        <div class="form-group">
+                               
+                            <input type="text" name='category' #category='ngModel' ngModel  class="form-control" placeholder="Enter category Name " required>
+                        </div>
+                            <div *ngIf='category.touched&&category.invalid'>
+                                    <small style="color: red;">This field cannot be empty</small>
+                                </div>   
+                      
+                            <div class="form-group">
+                                <input type="text" name='company' #company='ngModel' ngModel 
+                                 class="form-control" placeholder="Enter company  Name " required>
+                                </div>
+                                 <div *ngIf="company.touched&&company.invalid">
+                                    <div *ngIf="company.errors.required">
+                                        
+                                        <small style="color: red;">This field cannot be empty</small>
+                                    </div>
+                                    </div>   
+                              
+                            
+                                    <div class="form-group">
+                                    <input type="number" name='quantity' #quantity='ngModel' ngModel class="form-control" placeholder="Enter yearOfPublication " required>
+                                </div>
+                                    <div *ngIf=quantity.touched&&quantity.invalid>
+                                            <small style="color: red;">This field cannot be empty</small>
+                                        </div> 
+                                
+                                <div class="form-group">
+                                    <input type="text" name='price' #price='ngModel' ngModel  class="form-control" placeholder="Enter Product Name " required>
+                                    <div *ngIf='price.touched&&price.invalid'>
+                                        <small style="color: red;">This field cannot be empty</small>
+                                    </div>
+                                </div>
+                               
+                        <div class="form-group">
+                            <button type="reset" class="btn btn-warning col-md-6 form-control">Reset</button>
+                            <button type="submit" class="btn btn-success col-md-6 form-control float-right" [disabled] ='productform.invalid'>Add product</button>
+                        </div>
+                        
+                    </form>
+        </div>
+
+    </div>
+</div>
+
+
+
