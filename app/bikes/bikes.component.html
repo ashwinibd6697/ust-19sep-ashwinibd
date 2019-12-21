@@ -1,0 +1,9 @@
+
+
+<div class="col-md-4 mt-2 float-left card card-body" id="s">
+    <div class="card card-body" *ngFor="let i of cars">
+        <img src="{{i.imgUrl}}" alt=""(click)="sendCar(i)" >
+        <h1>{{i.name}}</h1>
+    </div> 
+ </div>
+<app-bchild [carName]="s1"></app-bchild>

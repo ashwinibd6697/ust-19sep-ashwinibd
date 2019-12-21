@@ -1,0 +1,8 @@
+
+<div class="col-md-4 mt-2 float-left card card-body" id="w">
+    <div class="card card-body" *ngFor="let j of lap">
+        <img src="{{j.imgUrl}}" alt=""(click)="sendCar(j)" >
+        <h1>{{j.name}}</h1>
+    </div> 
+ </div>
+<app-lapchild [carName]="s2"></app-lapchild>
